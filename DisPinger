@@ -1,0 +1,63 @@
+import pynput
+import time
+from pynput.keyboard import Key, Controller
+import os
+
+time.sleep(1)
+
+print(("""\
+
+________  .__       __________.__                             
+\______ \ |__| _____\______   \__| ____    ____   ___________ 
+ |    |  \|  |/  ___/|     ___/  |/    \  / ___\_/ __ \_  __ |
+ |    `   \  |\___ \ |    |   |  |   |  \/ /_/  >  ___/|  | \/
+/_______  /__/____  >|____|   |__|___|  /\___  / \___  >__|   
+        \/        \/                  \//_____/      \/       
+/"""))
+
+
+
+time.sleep(0.5)
+print(" ping spam and word spammer for discord")
+time.sleep(0.5)
+print("         author- Wolfy")
+time.sleep(0.5)
+#yes or no variable 
+
+
+
+
+print('what would you like too disping?:')
+x = input()
+answer = input(x + ' Is this Correct? (yes/no)')
+if answer == "yes":
+         
+         while True:
+                print("you have 5 seconds too click on the text bar")
+                time.sleep(5)
+                keyboard = Controller()
+                while True:
+                        keyboard.type(x)
+                        time.sleep(0.5)
+                        keyboard.press(Key.enter)
+                        time.sleep(0.5)
+                        keyboard.release(Key.enter)
+                        
+
+
+elif answer == "no":
+        print("shutting down")
+        time.sleep(1)
+        quit()
+
+else:
+        print("Sorry, please try again. Yes/No")         
+
+
+
+                        
+
+                
+        
+
+
